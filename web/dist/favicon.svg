@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="fp-bid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="fp-ask" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="#0c1017"/>
+  <!-- Left Bid Footprint Blocks -->
+  <rect x="6.5" y="8.5" width="7.5" height="4" rx="1.5" fill="url(#fp-bid)"/>
+  <rect x="9" y="14" width="5" height="4" rx="1.5" fill="url(#fp-bid)" opacity="0.85"/>
+  <rect x="5.5" y="19.5" width="8.5" height="4" rx="1.5" fill="url(#fp-bid)"/>
+  <!-- Central POC laser line -->
+  <line x1="16" y1="5.5" x2="16" y2="26.5" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="1.5 1.5" opacity="0.9"/>
+  <!-- Right Ask Footprint Blocks -->
+  <rect x="18" y="8.5" width="5.5" height="4" rx="1.5" fill="url(#fp-ask)" opacity="0.85"/>
+  <rect x="18" y="14" width="8.5" height="4" rx="1.5" fill="url(#fp-ask)"/>
+  <rect x="18" y="19.5" width="6.5" height="4" rx="1.5" fill="url(#fp-ask)" opacity="0.9"/>
+</svg>

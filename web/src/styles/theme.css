@@ -1,0 +1,31 @@
+/* Design tokens + base. modern.css (loaded last) re-declares the same tokens for the Terminal theme. */
+:root{
+  --bg-0:#08090c; --bg-1:#0c0e12; --bg-2:#101318; --bg-3:#151920; --bg-4:#1b2029; --bg-5:#232a35; --input:#0e1116;
+  --line:#191e25; --line-2:#222831; --line-3:#2e3640;
+  --text:#e9edf2; --text-2:#a0a9b6; --text-3:#6b7684; --text-4:#4a5361;
+  --up:#22c58b; --up-bg:rgba(34,197,139,.12); --dn:#a47cf2; --dn-bg:rgba(164,124,242,.14);
+  --accent:#4c8dff; --accent-2:#6ea3ff; --accent-bg:rgba(76,141,255,.14); --accent-line:rgba(76,141,255,.5);
+  --warn:#f5b544; --warn-bg:rgba(245,181,68,.12); --danger:#f0506e; --danger-bg:rgba(240,80,110,.12);
+  --r-sm:6px; --r:8px; --r-lg:12px;
+  --font:Inter,"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --mono:"JetBrains Mono","SF Mono",ui-monospace,Consolas,monospace;
+  --sh-float:0 12px 32px rgba(0,0,0,.5),0 2px 8px rgba(0,0,0,.4);
+  /* legacy names */
+  --bg:var(--bg-1); --surface:var(--bg-3); --surface-2:var(--bg-4); --surface-3:var(--bg-5);
+  --accent-hi:var(--accent-2); --bull:var(--up); --bear-2:var(--dn);
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;background:var(--bg-0);color:var(--text);font:13px/1.45 var(--font);-webkit-font-smoothing:antialiased}
+#root{height:100vh;display:flex;flex-direction:column}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+a{color:inherit}
+input,select,textarea{outline:none}
+select option{background:var(--bg-3);color:var(--text)}
+table{border-collapse:collapse}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--text-3)}
+.grow{flex:1}
+.up{color:var(--up)}.dn{color:var(--dn)}.warn{color:var(--warn)}
+.pos{color:var(--up)}.neg{color:var(--dn)}
